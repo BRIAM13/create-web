@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE-INFO</title>
+    <link rel="icon" href="img/im.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/im.jpg" alt="Logo">
+            </a>
+            <a class="logo" href="">CREATE-INFO</a>
+            <input type="checkbox" id="check">
+            <label class="mostrar-menu" for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav class="menu">
+                <a href="">INICIO</a>
+                <a href="#informacion">INFORMACION</a>
+                <a href="https://www.facebook.com/profile.php?id=61559795470535">SOBRE NOSOTROS</a>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="album">
+            
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/letra3d.jpg" alt="Combo Letras y Número 3D">
+                        <p>Molde/Plantilla 3D</p>
+                        <button class="btn-agregar" onclick="scrollToSection('combo-letra')">CONSULTA</button>
+                    </div>
+                </article>
+                
+                
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/cajagrande.jpg" alt="Combo Letras y Número 3D">
+
+                        <p>Molde / Plantilla Caja Canchera grande</p>
+
+                        <button class="btn-agregar" onclick="scrollToSection('caja-grande')">CONSULTA</button>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/triangulo.jpg" alt="Combo Letras y Número 3D">
+                        <p>MOLDE CAJA Triangular</p>
+                        <button class="btn-agregar" onclick="scrollToSection('caja-triangulo')">CONSULTA</button>
+                    </div>
+                </article>
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/cajachica.jpg" alt="Combo Letras y Número 3D">
+                        <p>MOLDE CAJA CANCHERA PEQUEÑO</p>
+                        <button class="btn-agregar" onclick="scrollToSection('caja-pequena')">CONSULTA</button>
+                    </div>
+                </article>
+
+
+                
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/dulcera.jpg" alt="Combo Letras y Número 3D">
+                        <p>MOLDE CAJA DULCERA LECHERA</p>
+                        <button class="btn-agregar" onclick="scrollToSection('caja-lechera')">CONSULTA</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/BOMBONERA.jpg" alt="Combo Letras y Número 3D">
+                        <p>MOLDE CAJITA BOMBONERA</p>
+                        <button class="btn-agregar" onclick="scrollToSection('BOMBONERA')">CONSULTA</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/TOPERS.jpg" alt="Combo Letras y Número 3D">
+                        <p>Mini Toppers IMPRIMIBLES  Y EDITABLES</p>
+                        <button class="btn-agregar" onclick="scrollToSection('TOPERS')">CONSULTA</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/bolsa.jpg" alt="Combo Letras y Número 3D">
+                        <p> MOLDE PARA BOLSA PARA CHIP</p>
+                        <button class="btn-agregar" onclick="scrollToSection('BOLSA-CHIP')">CONSULTA</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="info-tarjeta">
+                        <img src="img/macdonal.jpg" alt="Combo Letras y Número 3D">
+                        <p>MOLDE CAJA DULCERA TIPO MACDONALDS</p>
+                        <button class="btn-agregar" onclick="scrollToSection('MACDONAL')">CONSULTA</button>
+                    </div>
+                </article>
+
+                
+
+
+            </section>
+        </main>
+
+        <!-- Sección a la que se redirige al hacer clic en "CONSULTA" -->
+        <main class="main" id="combo-letra">
+            <h1 class="titulo">Molde / Plantilla Letras 3D</h1>
+            <section class="album">
+                <div class="product-image">
+                    <img id="main-image-combo" src="img/plantillaletra1.jpg" alt="Imagen Grande">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="img/moldeletra.jpg" alt="Imagen Miniatura" onclick="changeImage('img/moldeletra.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/letra.jpg" alt="Imagen Miniatura" onclick="changeImage('img/letra.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/plantillaletra.jpg" alt="Imagen Miniatura" onclick="changeImage('img/letra.jpg', 'main-image-combo')">
+                </div>
+            </section>
+            <div class="informacion">
+                <h2>FORMAS DE PAGO:</h2>
+                <ul>    
+                    <li>
+                        <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                        <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                        <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                    </li>
+                </ul>
+                <a href="https://wa.me/+51982338586" target="_blank">
+                    <button class="btn-agregar">COMPRAR</button>
+                </a>
+            </div>
+        </main>
+        
+        <main class="main" id="caja-grande">
+            <h1 class="titulo">Molde / Plantilla Caja Canchera grande</h1>
+            <section class="album">
+                <article class="tarjeta">
+                    <div class="product-images">
+                        <img id="main-image-caja" src="img/cancha3.jpg" alt="Caja Canchera Grande">
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="img/cancha2.jpg" alt="Thumbnail 1" onclick="changeImage('img/cancha2.jpg', 'main-image-caja')">
+                            <img class="thumbnail" src="img/cancha1.jpg" alt="Thumbnail 2" onclick="changeImage('img/cancha1.jpg', 'main-image-caja')">
+                            <img class="thumbnail" src="img/CANCHA4.jpg" alt="Thumbnail 2" onclick="changeImage('img/cancha4.jpg', 'main-image-caja')">
+                        </div>
+                    </div>
+                </article>
+                <div class="informacion">
+                    <h2>FORMAS DE PAGO</h2>
+                    <ul>    
+                        <li>
+                            <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                            <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                            <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+51982338586" target="_blank">
+                        <button class="btn-agregar">COMPRAR</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <main class="main" id="caja-pequena">
+            <h1 class="titulo">MOLDE CAJA CANCHERA PEQUEÑO</h1>
+            <section class="album">
+                <article class="tarjeta">
+                    <div class="product-images">
+                        <img id="main-image-caja" src="img/chico.jpg" alt="Caja Canchera Pequeño">
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="img/cajachica.jpg" alt="Thumbnail 2" onclick="changeImage('img/cajachica.jpg', 'main-image-caja')">
+                            <img class="thumbnail" src="img/chico1.jpg" alt="Thumbnail 1" onclick="changeImage('img/chico1.jpg', 'main-image-caja')">
+                            <img class="thumbnail" src="img/chico2.jpg" alt="Thumbnail 2" onclick="changeImage('img/chico2.jpg', 'main-image-caja')">
+                        </div>
+                    </div>
+                </article>
+                <div class="informacion">
+                    <h2>FORMAS DE PAGO</h2>
+                    <ul>    
+                        <li>
+                            <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                            <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                            <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+51982338586" target="_blank">
+                        <button class="btn-agregar">COMPRAR</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <main class="main" id="caja-triangulo">
+            <h1 class="titulo">MOLDE CAJA DULCERA TRIANGULO</h1>
+            <section class="album">
+                <article class="tarjeta">
+                    <div class="product-images">
+                        <img id="main-image-triangulo" src="img/triangulo.jpg" alt="Caja Dulcera Triangulo">
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="img/trinagulo1.jpg  " alt="Thumbnail 1" onclick="changeImage('img/trinagulo1.jpg', 'main-image-triangulo')">
+                            <img class="thumbnail" src="img/trinagulo2.jpg" alt="Thumbnail 2" onclick="changeImage('img/trinagulo2.jpg', 'main-image-triangulo')">
+
+                            <img class="thumbnail" src="img/triangulo3.jpg" alt="Thumbnail 2" onclick="changeImage('img/triangulo3.jpg', 'main-image-triangulo')">
+                            <img class="thumbnail" src="img/trinagulo4.jpg" alt="Thumbnail 2" onclick="changeImage('img/trinagulo4.jpg', 'main-image-triangulo')">
+                        </div>
+                    </div>
+                </article>
+                <div class="informacion">
+                    <h2>FORMAS DE PAGO</h2>
+                    <ul>    
+                        <li>
+                            <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                            <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                            <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+51982338586" target="_blank">
+                        <button class="btn-agregar">COMPRAR</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <main class="main" id="caja-lechera">
+            <h1 class="titulo">MOLDE CAJA DULCERA LECHERA</h1>
+            <section class="album">
+                <article class="tarjeta">
+                    <div class="product-images">
+                        <img id="main-image-lechera" src="img/DULCERA1.jpg" alt="Caja Dulcera Lechera">
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="img/DULCERA2.jpg" alt="Thumbnail 1" onclick="changeImage('img/DULCERA1.jpg', 'main-image-lechera')">
+                            <img class="thumbnail" src="img/DULCERA1.jpg" alt="Thumbnail 2" onclick="changeImage('img/DULCERA1.jpg', 'main-image-lechera')">
+                            <img class="thumbnail" src="img/dulcera4.jpg" alt="Thumbnail 2" onclick="changeImage('img/dulcera4.jpg', 'main-image-triangulo')">
+                            <img class="thumbnail" src="img/DULCERA.jpg" alt="Thumbnail 2" onclick="changeImage('img/dulcera.jpg', 'main-image-triangulo')">
+                        </div>
+                    </div>
+                </article>
+                <div class="informacion">
+                    <h2>FORMAS DE PAGO</h2>
+                    <ul>    
+                        <li>
+                            <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                            <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                            <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/+51982338586" target="_blank">
+                        <button class="btn-agregar">COMPRAR</button>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <main class="main" id="MACDONAL">
+            <h1 class="titulo">MOLDE/Plantilla CAJA DULCERA TIPO MACDONALDS
+            </h1>
+            <section class="album">
+                <div class="product-image">
+                    <img id="main-image-combo" src="img/MACDONAL1.jpg" alt="Imagen Grande">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="img/MACDONAL1.jpg" alt="Imagen Miniatura" onclick="changeImage('img/MACDONAL1.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/MACDONAL2.jpg" alt="Imagen Miniatura" onclick="changeImage('img/MACDONAL2.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/MACDONAL3.jpg" alt="Thumbnail 2" onclick="changeImage('img/MACDONAL3.jpg', 'main-image-triangulo')">
+                    <img class="thumbnail" src="img/macdonal4.jpg" alt="Thumbnail 2" onclick="changeImage('img/macdonal4.jpg', 'main-image-triangulo')">
+                </div>
+            </section>
+            <div class="informacion">
+                <h2>FORMAS DE PAGO:</h2>
+                <ul>    
+                    <li>
+                        <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                        <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                        <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                    </li>
+                </ul>
+                <button class="btn-agregar" onclick="scrollToSection('MACDONAL')">COMPRAR</button>
+            </div>
+        </main>
+
+
+        <main class="main" id="BOMBONERA"></main>
+            <h1 class="titulo">MOLDE/Plantilla CAJITA BOMBONERA
+            </h1>
+            <section class="album">
+                <div class="product-image">
+                    <img id="main-image-combo" src="img/BOMBONERA1.jpg" alt="Imagen Grande">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="img/BOMBONERA2.jpg" alt="Imagen Miniatura" onclick="changeImage('img/BOMBONERA2.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/MACDONAL2.jpg" alt="Imagen Miniatura" onclick="changeImage('img/BOMBONERA2.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/BOMBONERA.jpg" alt="Thumbnail 2" onclick="changeImage('img/BOMBONERApg', 'main-image-triangulo')">
+                </div>
+            </section>
+            <div class="informacion">
+                <h2>FORMAS DE PAGO:</h2>
+                <ul>    
+                    <li>
+                        <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                        <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                        <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                    </li>
+                </ul>
+                <button class="btn-agregar" onclick="scrollToSection('BOMBONERA')">COMPRAR</button>
+            </div>
+        </main>
+
+        <main class="main" id="BOLSA-CHIP">
+            <h1 class="titulo">MOLDE PARA BOLSA PARA CHIP</h1>
+            <section class="album">
+                <div class="product-image">
+                    <img id="main-image-combo" src="img/CHIP1.jpg" alt="Imagen Grande">
+                </div>
+                <div class="thumbnail-container">
+                    <img class="thumbnail" src="img/CHIP2.jpg" alt="Imagen Miniatura" onclick="changeImage('img/CHIP2.jpg', 'main-image-combo')">
+                    <img class="thumbnail" src="img/CHIP3.jpg" alt="Imagen Miniatura" onclick="changeImage('img/CHIP3', 'main-image-combo')">
+                    <img class="thumbnail" src="img/CHIP.jpg" alt="Thumbnail 2" onclick="changeImage('img/CHIP.jpg', 'main-image-triangulo')">
+                </div>
+            </section>
+            <div class="informacion">
+                <h2>FORMAS DE PAGO:</h2>
+                <ul>    
+                    <li>
+                        <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                        <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                        <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+                    </li>
+                </ul>
+                <button class="btn-agregar" onclick="scrollToSection('BOLSA-CHIP')">COMPRAR</button>
+            </div>
+        </main>
+        
+        
+        <main class="main" id="TOPERS">
+    <h1 class="titulo">Mini Toppers IMPRIMIBLES Y EDITABLES</h1>
+    <section class="album">
+        <div class="product-image">
+            <img id="main-image-combo" src="img/TOPER1.jpg" alt="Imagen Grande">
+        </div>
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="img/TOPER2.jpg" alt="Imagen Miniatura" onclick="changeImage('img/TOPER2.jpg', 'main-image-combo')">
+            <img class="thumbnail" src="img/TOPER3.jpg" alt="Imagen Miniatura" onclick="changeImage('img/TOPER3.jpg', 'main-image-combo')">
+  
+        </div>
+    </section>
+    <div class="informacion">
+        <h2>FORMAS DE PAGO:</h2>
+        <ul>
+            <li>
+                <img src="img/YAPE.jpg" alt="YAPE Logo" style="width: 25px; height: 25px;">
+                <img src="img/PLIN.jpg" alt="PLIN Logo" style="width: 25px; height: 25px;">
+                <img src="img/EFECTIVO.png" alt="EFECTIVO Logo" style="width: 25px; height: 25px;">
+            </li>
+        </ul>
+        <button class="btn-agregar" onclick="scrollToSection('TOPERS')">COMPRAR</button>
+    </div>
+</main>
+
+
+
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+                    <h1>AVISO IMPORTANTE</h1>
+
+                    <b>Molde/Plantilla 3D                    </b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li>  
+                        <li>letras de la A hasta Z en mayúscula</li>
+                        <li>PRECIO POR LETRA ES DE S/. 1.50 por tiempo limitado</li> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 12 cm x 11 cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+        
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>CAJA CANCHERA GRANDE</b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li>  
+                        <li>letras de la A hasta Z en mayúscula</li>
+                        <li>PRECIO POR LETRA ES DE S/. 1.50 por tiempo limitado</li> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 12 cm x 11 cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>CAJA CANCHERA PEQUEÑA</b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 11.97 cm x 6,72cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>MOLDE CAJA DULCERA TRIANGULO</b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 13 cm x 6cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>MOLDE CAJA DULCERA LECHERA</b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 16 cm x 7cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>MOLDE CAJA DULCERA TIPO MACDONALDS
+
+                    </b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 17 cm x 10cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>MOLDE CAJITA BOMBONERA
+
+                    </b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 17 cm x 10cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+        <section class="contact">
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>MOLDE PARA BOLSA PARA CHIP
+                    </b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada cajita mide aproximadamente 13 cm x 17cm. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.Los archivos estan en blanco sin diseño (las imagenes son ilustrativas)
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+
+
+        <section class="contact"></section>
+            <div class="alinear">
+                <div class="centrar">
+
+                    <b>Mini Toppers IMPRIMIBLES  Y EDITABLES
+                    </b>
+                    <p>CON TU COMPRA OBTIENES:</p>
+                    <ul>    
+                        <li>Archivo en formato power point</li> 
+                        <li>Formato PDF para otros programas de diseño</li> 
+                        <LI>Plantillas de texto nube editable</LI> 
+                    </ul>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). LAS MEDIDAS SON OPCIONALES DE ACUERDO A PEDIDO
+                    </p>
+                    <h6>PROHIBIDA LA REVENTA DEL PRODUCTO EN FORMATO DIGITAL</h6>
+                </div>
+            </div>
+
+
+            
+        </section>
+        <section class="contact" id="informacion">
+            <div class="alinear">
+                <div class="centrar">
+                    <h1>¿Qué venden?</h1>
+                    <p> 
+                        Agendas para imprimir, candy bar, kit imprimibles para fechas especiales, moldes, y mucho más!! Todos los productos que veas en nuestra web son archivos digitales que se envían por mail para que vos mismo imprimas.
+                    </p>
+                    <p>
+                        Configurado en tamaño de hoja A4 (21x29,7). Cada letra/número mide aproximadamente 14cm. Números del 0 al 9. Puedes modificar el color, el tamaño, agregar texto, fondos, etc.
+                    </p>
+                    <p>
+                        Agendas para imprimir, candy bar, kit imprimibles para fechas especiales, moldes, y mucho más!! Todos los productos que veas en nuestra web son archivos digitales que se envían por via WhatsApp
+                    </p>
+                    <h1>¿Cómo compro?</h1>
+                    <p>
+                        Haces click en "CONSULTAR", luego podrás conversar directamente con un personal de la empresa, para así poder conocer más a detalle sobre ello y el pago a realizar.
+                    </p>
+                    <h1>¿Cuándo recibo el producto?</h1>
+                    <p>
+                        PRODUCTO DIGITAL: El producto te llegará al WhatsApp del vendedor el mismo día o el siguiente según horario de atención.
+                    </p>
+                    <p>
+                        Al recibir tu archivo, podrás descargarlo y usarlo cuantas veces desees.
+                    </p>
+                    <h1>¿Hay envío?</h1>
+                    <p>
+                        Para los productos digitales no es necesario realizar envíos. Recibirás tu archivo en formato digital a través del WhatsApp.
+                    </p>
+                    <h1>¿Puedo realizar modificaciones?</h1>
+                    <p>
+                        Puedes modificar el color, el tamaño, agregar texto, fondos, etc. Según lo que te brinde el producto.
+                    </p>
+                    <h1>¿Dónde están ubicados?</h1>
+                    <p>
+                        Estamos ubicados en la ciudad de Lima - Perú.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CREATE-INFO. Todos los derechos reservados.</p>
+            <p>TAMARA NOEMI CACCHA PARIONA</p>
+        </footer>
+    </div>
+    <script>
+        function changeImage(src) {
+        document.getElementById('main-image').src = src;
+    }
+
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+    function changeImage(newSrc, imageId) {
+    document.getElementById(imageId).src = newSrc;
+}
+
+    </script>
+</body>
+</html>

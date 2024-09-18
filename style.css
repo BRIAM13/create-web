@@ -1,0 +1,950 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+body {
+    background-color: #fff;
+    color: #222;
+    transition: all 0.5s ease;
+}
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #289fd7;
+    color: #ffffff;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header .logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+}
+.header .menu {
+    display: flex;
+}
+.header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    height: 60px;
+    padding: 20px;
+}
+
+.mostrar-menu i,
+.esconder-menu i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.mostrar-menu,
+.esconder-menu {
+    display: none;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+
+
+#check {
+    display: none;
+}
+
+.slider {
+    width: auto;
+    height: 480px;
+    overflow: hidden;
+}
+
+.slider .slides {
+    width: 500%;
+    height: 480px;
+    display: flex;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3);
+}
+
+.slider .slides .slide {
+    width: 20%;
+    transition: all 10s ease-in-out;
+}
+
+.slider .slides .slide img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.slider .navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -30px;
+    gap: 40px;
+}
+
+.slider .navigation .nav-btn {
+    background: white;
+    opacity: 0.2;
+    padding: 5px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    gap: 30px;
+    background-color: white;
+}
+
+.main .titulo {
+    color: #060606;
+    font-size: 35px;
+}
+
+.main .album {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    width: 100%;
+    gap: 40px;    
+    padding: 20px;
+}
+
+.main .album .tarjeta {
+    border-radius: 5px;
+    overflow:auto;    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    display: grid;
+    align-items: center;
+}
+
+.main .album .tarjeta .img-tarjeta {
+    width: 700px;
+    height: 620px;
+    object-fit: cover;    
+}
+
+.main .album .tarjeta .info-tarjeta {
+    display: grid;
+    gap: 25px;
+    padding: 25px;
+}
+
+.main .album .tarjeta .info-tarjeta h3 {
+    font-size: 16px;
+}
+
+
+.info-tarjeta{
+    background-color: rgb(136, 197, 227);
+    font-size: 16px;
+
+
+}
+.link {
+    border: 1px solid #0815ff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #0033ff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+.link i {
+    color: #222;
+}
+
+
+/* SECTION: CONTACT */
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 65px 250px;
+    border-top: 1px solid #bbbbbb;
+    background: #fff;
+}
+
+.contact .alinear {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .centrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.contact .centrar h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.contact .centrar img {
+    width: 250px;
+}
+
+.contact .informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact .informacion div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact .informacion div i, b {
+    color: #2100f8;
+}
+
+.contact .centrar .tel {
+    background: #1466bd;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+    height: 45px;
+}
+
+.contact .centrar .wts {
+    background: #2ec429;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    transition: all 0.2s ease;
+}
+
+.contact .centrar .wts i {
+    font-size: 25px;
+}
+
+.contact .centrar .tel i {
+    font-size: 18px;
+}
+
+
+
+.contact .contactar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+form {
+    padding: 20px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactar h4 {
+    text-align: start;
+    font-size: 25px;
+}
+.datos-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contactar label {
+    display: block;
+    padding-bottom: 10px;
+    color: #0800ff;
+    font-weight: 700;
+    
+}
+.contactar input,
+.contactar textarea {
+    background: #fff;
+    border: 1px solid transparent;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    resize: none;
+}
+.contactar input:focus,
+.contactar textarea:focus {
+    border: 1px solid #0040ff;
+}
+.contactar input::placeholder,
+.contactar textarea::placeholder {
+    opacity: 0.5;
+}
+
+#submit{
+    background: #0800ff;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.map {
+    height: 500px;
+    width: 400px;
+}
+
+.visits {
+    padding: 30px 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    /* font-weight: bold; */
+    color: rgba(255, 14, 14, 0.986)     ;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #222;
+    color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .uni {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px;
+}
+.footer .uni .sjb {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .logo-u {
+    width: 230px;
+    height: auto;
+}
+.footer .uni .sjb i {
+    align-self: center;
+}
+
+.footer .igua {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: start;
+    gap: 10px;
+}
+
+.footer .users {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(7, auto);
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .uni p {
+    padding-left: 10px;
+}
+.footer .users span {
+    padding: 0 10px 0 10px;
+}
+
+.footer .users .email {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.footer .redes {
+    border-top: 1px solid #5b5b5b;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 25px;
+}
+
+.footer .redes i {
+    font-size: 25px;
+    color: #bbbbbb;
+    transition: all 0.2s ease;
+}
+
+
+.footer .derechos {
+    text-align: center;
+    background-color: #141414;
+    padding: 20px;
+}
+
+@media (hover: hover) {
+    .menu a:hover {
+        background: #fff;
+        color: #0015ff;
+    }
+    .slider .navigation .nav-btn:hover {
+        opacity: 1;
+    }
+
+    .main .album .tarjeta:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0px 15px 30px -5px rgba(0, 0, 0, 0.3);
+    }
+    .link:hover {
+        transform: scale(1.05);
+        background: #0259fb;
+        color: white;
+    }
+    .link:hover i {
+        color: white;
+    }
+    .link:active {
+        transform: scale(1);
+    }
+
+    .contact .centrar .tel:hover,
+    .contact .centrar .wts:hover {
+        transform: scale(1.05);
+    }
+    .contact .centrar .tel:active,
+    .contact .centrar .wts:active {
+        transform: scale(1);
+    }
+
+    #submit:hover {
+        transform: scale(1.02);
+    }
+    #submit:active {
+        transform: scale(1);
+    }
+
+    .footer .users .email:hover {
+        color: white;
+    }
+    .footer .redes i:hover {
+        transform: scale(1.2);
+    }
+    
+    .footer .redes .fa-facebook:hover {
+        color: #3B5998;
+    }
+    .footer .redes .fa-instagram:hover {
+        color: #F58529;
+    }
+    .footer .redes .fa-tiktok:hover {
+        color: #FE2C55;
+    }
+    .footer .redes .fa-twitter:hover {
+        color: #00ACEE;
+    }
+    .footer .redes .fa-youtube:hover {
+        color: #C4302B;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header .logo {
+        font-size: 40px;
+    }
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+        padding: 0 15px;
+    }
+    .esconder-menu {
+        position: absolute;
+        top: 20px;
+        right: 23px;
+    }
+    .header .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #b42b2b;
+        right: -100%;
+        top: 60px;
+        text-align: center;
+        z-index: 100;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .menu a {
+        border-left: 0;
+        height: auto;
+        padding: 20px;
+    }
+    
+    #check:checked ~ .menu {
+        right: 0;
+    }
+
+    .slider {
+        height: 280px;
+    }
+
+    .slider .slides {
+        height: 280px;
+    }
+
+    .slider .slides .slide img {
+        height: 280px; 
+    }
+
+    .main {
+        padding: 0;
+        gap: 0;
+    }
+
+    .main .titulo {
+        font-size: 20px;
+        padding: 20px 10px 0 10px;
+    }
+
+    .main .album {
+        grid-template-columns: auto;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+
+    .main .album .tarjeta {
+        width: 320px;
+    }
+
+    .main .album .tarjeta .img-tarjeta {
+        height: 180px;
+    }
+
+    .main .album .tarjeta .info-tarjeta {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .contact {
+        grid-template-columns: auto;
+        padding: 30px;
+        gap: 30px;
+    }
+    .contact .centrar {
+        align-items: center;
+        gap: 20px;
+    }
+    .contact .alinear * {
+        font-size: 12px;
+    }
+
+    .datos-form {
+        grid-template-columns: auto;
+    }
+
+    .visits p,
+    .visits b,
+    .visits span,
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer .uni {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+        gap: 30px;
+    }
+    .footer .uni .sjb {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .footer .logo-u {
+        align-self: center;
+    }
+
+    .footer .uni .users span,
+    .footer .uni .users .email {
+        display: none;
+    }
+
+    .footer .users {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .footer .redes a i {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.titulo {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.informacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.precio {
+    font-size: 2em;
+    color: #27ae60;
+}
+
+.cantidad {
+    margin: 20px 0;
+}
+
+.cantidad input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.btn-agregar {
+    background-color: #00b5e2;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background-color: #0095c3;
+}
+
+.informacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacion h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.informacion li {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.aviso {
+    margin-top: 20px;
+    color: #d35400;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.suscripcion {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contenedor-suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suscripcion label {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.suscripcion input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-enviar {
+    background-color: #00b5e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #0095c3;
+}
+
+
+
+<style>
+  .informacion {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+  }
+
+  .informacion li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    padding: 5px; /* Espacio interno en cada elemento de la lista */
+    border-bottom: 1px solid #ccc; /* Línea debajo de cada elemento para mejor visibilidad */
+  }
+
+  .informacion h2 {
+    margin-top: 20px; /* Espacio arriba del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+  }
+
+  .informacion ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+  }
+
+  .informacion ul li {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos dentro del <li> */
+  }
+
+  .informacion ul li img {
+    margin-right: 10px; /* Espacio entre las imágenes */
+  }
+
+  .btn-agregar {
+    display: block;
+    margin-top: 20px; /* Espacio arriba del botón */
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+
+  .btn-agregar:hover {
+    background-color: #0056b3; /* Color de fondo cuando el botón está en hover */
+  }
+
+  .thumbnail {
+    width: 100px; /* Tamaño de la miniatura */
+    cursor: pointer;
+    border: 2px solid #ddd;
+    margin: 5px;
+}
+
+.main-image {
+    width: 300px; /* Tamaño de la imagen grande */
+}
+
+.product-images {
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-images .thumbnail + .thumbnail {
+    margin-left: 10px;
+}
+
+
+
+.product-image {
+    display: flex;
+    align-items: center;
+}
+
+#main-image {
+    width: 70%; /* Ajusta según tu diseño */
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.thumbnail {
+    width: 100px; /* Ajusta según el tamaño deseado */
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnail:hover {
+    border: 2px solid #000; /* Cambia el color del borde según tu preferencia */
+}
+
+
+.product-image {
+    display: flex;
+    align-items: center;
+}
+
+#main-image-caja {
+    width: 70%; /* Ajusta el ancho de la imagen grande según tu diseño */
+}
+
+.thumbnail-container-caja {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.thumbnail-caja {
+    width: 100px; /* Ajusta el tamaño de las miniaturas */
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnail-caja:hover {
+    border: 2px solid #000; /* Cambia el color del borde en hover según tu preferencia */
+}
+
+
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el logo y el menú */
+    align-items: center;
+    background-color: #289fd7;
+    color: #ffffff;
+    height: 60px;
+    padding: 0 20px; /* Espaciado interno del header */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header .logo img {
+    height: 40px; /* Tamaño del logo */
+    width: auto; /* Mantiene la proporción */
+}
+
+.header .menu {
+    display: flex;
+}
+
+.header .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+}
